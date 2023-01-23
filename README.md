@@ -1,4 +1,4 @@
-# ChatGPT-Python
+# 🤖 ChatGPT-Python 🐍
 Este repositorio contiene el código que permite usar ChatGPT desde Python usando la API de OpenAI
 
 ## ⬇️ Instalación
