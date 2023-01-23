@@ -4,6 +4,8 @@ Este repositorio contiene el código que permite usar ChatGPT desde Python usand
 ## ⬇️ Instalación
 Para instalar y utilizar ChatGPT-Python, sigue estos pasos:
 
+> ⚠️ Es necesario tener instalado mpg321: ```apt install mpg321``` 
+
 1. Asegúrate de tener instalado [Python](https://www.python.org/) en tu sistema.
 2. Descarga o clona este repositorio en tu equipo.
 3. Abre una terminal y accede al directorio del repositorio.
