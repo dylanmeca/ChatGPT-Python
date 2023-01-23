@@ -10,6 +10,7 @@ Para instalar y utilizar ChatGPT-Python, sigue estos pasos:
 2. Descarga o clona este repositorio en tu equipo.
 3. Abre una terminal y accede al directorio del repositorio.
 4. Ejecuta el siguiente comando para instalar las dependencias necesarias: ```pip3 install -r requirements.txt```
+6. Abra un editor de codigo, y añada su **API KEY** dentro de las comillas donde aparece ```openai.api_key = ""```.
 5. Ejecuta el siguiente comando para iniciar el chatbot: ```python3 ChatGPT-Python.py ```
 
 ## 👷 Contribuciones
