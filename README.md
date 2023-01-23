@@ -1,4 +1,9 @@
 # 🤖 ChatGPT-Python 🐍
+[![Build Status](https://img.shields.io/github/stars/dylanmeca/ChatGPT-Python.svg)](https://github.com/dylanmeca/ChatGPT-Python)
+[![License](https://img.shields.io/github/license/dylanmeca/ChatGPT-Python.svg)](https://github.com/dylanmeca/ChatGPT-Python/blob/main/LICENSE)
+[![dylanmeca](https://img.shields.io/badge/author-dylanmeca-green.svg)](https://github.com/dylanmeca)
+[![Python](https://img.shields.io/badge/language-Python%20-yellow.svg)](https://www.python.org)
+
 Este repositorio contiene el código que permite usar ChatGPT desde Python usando la [API de OpenAI](https://openai.com/api/), las respuestas de ChatGPT son escritas y tambien por audio.
 
 ## ⬇️ Instalación
