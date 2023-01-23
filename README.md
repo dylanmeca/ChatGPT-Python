@@ -1,5 +1,5 @@
 # 🤖 ChatGPT-Python 🐍
-Este repositorio contiene el código que permite usar ChatGPT desde Python usando la API de OpenAI
+Este repositorio contiene el código que permite usar ChatGPT desde Python usando la API de OpenAI, las respuestas de ChatGPT son escritas y tambien por audio 
 
 ## ⬇️ Instalación
 Para instalar y utilizar ChatGPT-Python, sigue estos pasos:
