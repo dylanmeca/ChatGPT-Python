@@ -21,9 +21,9 @@ Este proyecto es de código abierto y estamos abiertos a cualquier tipo de contr
 Asegúrate de incluir una descripción detallada de tu contribución y de seguir nuestros estándares de código.
 
 ## Licencia
-Este proyecto se distribuye bajo la licencia [GPL-3.0](https://github.com/dylanmeca/IrisBot/blob/main/LICENSE). Esto significa que el código y la documentación de este proyecto son libres de usar, modificar y distribuir siempre y cuando se respeten los términos de la licencia.
+Este proyecto se distribuye bajo la licencia [GPL-3.0](https://github.com/dylanmeca/ChatGPT-Python/blob/main/LICENSE). Esto significa que el código y la documentación de este proyecto son libres de usar, modificar y distribuir siempre y cuando se respeten los términos de la licencia.
 
-Para obtener más información sobre la licencia, consulta el archivo [LICENSE](https://github.com/dylanmeca/IrisBot/blob/main/LICENSE) incluido en este repositorio.
+Para obtener más información sobre la licencia, consulta el archivo [LICENSE](https://github.com/dylanmeca/ChatGPT-Python/blob/main/LICENSE) incluido en este repositorio.
 
 ## Créditos
-Este proyecto ha sido desarrollado por [Dylan Meca](https://github.com/dylanmeca) y las contribuciones de los [usuarios](https://github.com/dylanmeca/IrisBot/contributors).
+Este proyecto ha sido desarrollado por [Dylan Meca](https://github.com/dylanmeca) y las contribuciones de los [usuarios](https://github.com/dylanmeca/ChatGPT-Python/contributors).
