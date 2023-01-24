@@ -23,7 +23,7 @@ while True:
     )
 
     respuesta = response["choices"][0]["text"]
-    #print("IrisBot:", response["choices"][0]["text"])
+    #print("ChatGPT:", response["choices"][0]["text"])
     # Convirtiendo texto a audio
     texto = str(respuesta)
     tts = gTTS(texto, lang="es")
