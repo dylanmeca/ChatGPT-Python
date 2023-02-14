@@ -5,12 +5,10 @@
 [![Python](https://img.shields.io/badge/language-Python%20-yellow.svg)](https://www.python.org)
 ![logo](https://raw.githubusercontent.com/dylanmeca/ChatGPT-Python/main/presentacion.png)
 
-Este repositorio contiene el código que permite usar ChatGPT desde Python usando la [API de OpenAI](https://openai.com/api/), las respuestas de ChatGPT son escritas y tambien por audio.
+Este repositorio contiene el código que permite usar ChatGPT desde Python usando la [API de OpenAI](https://openai.com/api/).
 
 ## ⬇️ Instalación
 Para instalar y utilizar ChatGPT-Python, sigue estos pasos:
-
-> ⚠️ Es necesario tener instalado mpg321: ```apt install mpg321``` 
 
 1. Asegúrate de tener instalado [Python](https://www.python.org/) en tu sistema.
 2. Descarga o clona este repositorio en tu equipo.
