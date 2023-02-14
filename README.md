@@ -17,6 +17,8 @@ Para instalar y utilizar ChatGPT-Python, sigue estos pasos:
 6. Abra un editor de codigo, y añada su **API KEY** dentro de las comillas donde aparece ```openai.api_key = ""```.
 5. Ejecuta el siguiente comando para iniciar el chatbot: ```python3 ChatGPT-Python.py ```
 
+También puedes usar [ChatGPT-Python desde Google Colab](https://colab.research.google.com/github/dylanmeca/ChatGPT-Python/blob/main/ChatGPT.ipynb).
+
 ## 👷 Contribuciones
 
 Este proyecto es de código abierto y estamos abiertos a cualquier tipo de contribución. Si quieres colaborar con el proyecto, sigue estos pasos:
