@@ -16,7 +16,7 @@ To install and use ChatGPT-Python, follow these steps:
 4. Run the following command to install the necessary dependencies: ```pip3 install -r requirements.txt```
 5. Run the following command to start the chatbot: ```python3 ChatGPT-Python.py ```
 
-También puedes usar [ChatGPT-Python desde Google Colab](https://colab.research.google.com/github/dylanmeca/ChatGPT-Python/blob/main/ChatGPT.ipynb).
+You can also use ChatGPT-Python from [Google Colab](https://colab.research.google.com/github/dylanmeca/ChatGPT-Python/blob/main/ChatGPT.ipynb) or from [Hugging Face](https://huggingface.co/spaces/dylanmeca/chatgpt-python).
 
 ## 👷 Contributions
 
