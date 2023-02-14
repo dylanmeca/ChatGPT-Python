@@ -1,34 +1,21 @@
 import openai
-from gtts import gTTS
-import os
+import gradio as gr
 
 # OPENAI API KEY
 openai.api_key = ""
-# Lista con despedidas comunes para finalizar el ciclo while
-despedida = ["Adios", "adios", "bye", "Bye", "Hasta luego", "hasta luego"]
 
-while True:
-    # Entrada del usuario y verificacion si la entrada coincide con la lista de despedidas
-    usuario = str(input("tu: "))
-    if usuario in despedida:
-        break
-    else:
-        prompt = (f"{usuario}")
-
-    # Obteniendo respuestas usando la API de OpenAI
+# Obteniendo respuestas usando la API de OpenAI
+def respuesta_chatgpt(mensaje):
+    prompt = (f"{mensaje}")
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
         max_tokens=1024
     )
-
-    respuesta = response["choices"][0]["text"]
-    #print("ChatGPT:", response["choices"][0]["text"])
-    # Convirtiendo texto a audio
-    texto = str(respuesta)
-    tts = gTTS(texto, lang="es")
-    tts.save("audio.mp3")
     # Mostrando la respuesta en pantalla
-    print("ChatGPT: ", respuesta)
-    # Reproduciendo el audio
-    os.system("mpg321 audio.mp3")
+    respuesta = response["choices"][0]["text"]
+    return respuesta
+
+# Entrada del usuario
+chatbot = gr.Interface(fn=respuesta_chatgpt, inputs="text", outputs="text")
+chatbot.launch()   
