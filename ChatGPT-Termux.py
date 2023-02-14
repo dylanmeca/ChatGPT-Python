@@ -1,22 +1,22 @@
-# ChatGPT-Python para Termux
+# ChatGPT-Python for Termux
 import openai
 from gtts import gTTS
 import os
 
 # OPENAI API KEY
 openai.api_key = ""
-# Lista con despedidas comunes para finalizar el ciclo while
+# List with common departures to end the while loop
 despedida = ["Adios", "adios", "bye", "Bye", "Hasta luego", "hasta luego"]
 
 while True:
-    # Entrada del usuario y verificacion si la entrada coincide con la lista de despedidas
+    # User input and check if the input matches the list of goodbyes
     usuario = str(input("tu: "))
     if usuario in despedida:
         break
     else:
         prompt = (f"{usuario}")
 
-    # Obteniendo respuestas usando la API de OpenAI
+    # Getting responses using the OpenAI API
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
@@ -25,13 +25,13 @@ while True:
 
     respuesta = response["choices"][0]["text"]
     #print("ChatGPT:", response["choices"][0]["text"])
-    # Convirtiendo texto a audio
+    # Converting text to audio
     texto = str(respuesta)
     tts = gTTS(texto, lang="es")
     tts.save("audio.mp3")
-    # Mostrando la respuesta en pantalla
+    # Displaying the answer on the screen
     print("ChatGPT: ", respuesta)
-    # Reproduciendo el audio
+    # Playing the audio
     os.system("pulseaudio -D")
     os.system("play audio.mp3")
     os.system("pulseaudio -k")
