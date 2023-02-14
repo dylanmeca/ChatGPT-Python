@@ -1,7 +1,7 @@
 import openai
 import gradio as gr
 
-# Obteniendo respuestas usando la API de OpenAI
+# Getting responses using the OpenAI API
 def respuesta_chatgpt(api_key, mensaje):
   # OPENAI API KEY
   openai.api_key = api_key
@@ -11,11 +11,11 @@ def respuesta_chatgpt(api_key, mensaje):
       prompt=prompt,
       max_tokens=1024
   )
-  # Mostrando la respuesta en pantalla
+  # Displaying the answer on the screen
   respuesta = response["choices"][0]["text"]
   return respuesta
       
-# Entrada del usuario
+# User input
 chatbot = gr.Interface(
     fn=respuesta_chatgpt, 
     inputs=["text", "text"],
