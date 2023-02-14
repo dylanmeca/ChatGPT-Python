@@ -7,31 +7,31 @@
 
 This repository contains the code that allows you to use ChatGPT from Python using the [OpenAI API](https://openai.com/api/).
 
-## ⬇️ Instalación
-Para instalar y utilizar ChatGPT-Python, sigue estos pasos:
+## ⬇️ Installation
+To install and use ChatGPT-Python, follow these steps:
 
-1. Asegúrate de tener instalado [Python](https://www.python.org/) en tu sistema.
-2. Descarga o clona este repositorio en tu equipo.
-3. Abre una terminal y accede al directorio del repositorio.
-4. Ejecuta el siguiente comando para instalar las dependencias necesarias: ```pip3 install -r requirements.txt```
-5. Ejecuta el siguiente comando para iniciar el chatbot: ```python3 ChatGPT-Python.py ```
+1. Make sure you have installed [Python](https://www.python.org/) in your system.
+2. Download or clone this repository to your computer.
+3. Open a terminal and access the repository directory.
+4. Run the following command to install the necessary dependencies: ```pip3 install -r requirements.txt```
+5. Run the following command to start the chatbot: ```python3 ChatGPT-Python.py ```
 
 También puedes usar [ChatGPT-Python desde Google Colab](https://colab.research.google.com/github/dylanmeca/ChatGPT-Python/blob/main/ChatGPT.ipynb).
 
-## 👷 Contribuciones
+## 👷 Contributions
 
-Este proyecto es de código abierto y estamos abiertos a cualquier tipo de contribución. Si quieres colaborar con el proyecto, sigue estos pasos:
+This project is open source and we are open to any kind of contribution. If you want to collaborate with the project, follow these steps:
 
-- Haz un fork de este repositorio.
-- Crea una rama con tu contribución.
-- Haz un pull request a este repositorio.
+- Fork this repository.
+- Create a branch with your contribution.
+- Make a pull request to this repository.
 
-Asegúrate de incluir una descripción detallada de tu contribución y de seguir nuestros estándares de código.
+Be sure to include a detailed description of your contribution and to follow our code standards.
 
-## 📜 Licencia
-Este proyecto se distribuye bajo la licencia [GPL-3.0](https://github.com/dylanmeca/ChatGPT-Python/blob/main/LICENSE). Esto significa que el código y la documentación de este proyecto son libres de usar, modificar y distribuir siempre y cuando se respeten los términos de la licencia.
+## 📜 License
+This project is distributed under the license [GPL-3.0](https://github.com/dylanmeca/ChatGPT-Python/blob/main/LICENSE). This means that the code and documentation in this project are free to use, modify, and distribute as long as you respect the license terms.
 
-Para obtener más información sobre la licencia, consulta el archivo [LICENSE](https://github.com/dylanmeca/ChatGPT-Python/blob/main/LICENSE) incluido en este repositorio.
+For more information about the license, see the file [LICENSE](https://github.com/dylanmeca/ChatGPT-Python/blob/main/LICENSE) included in this repository.
 
-## 🧾 Créditos
-Este proyecto ha sido desarrollado por [Dylan Meca](https://github.com/dylanmeca) y las contribuciones de los [usuarios](https://github.com/dylanmeca/ChatGPT-Python/contributors).
+## 🧾 Credits
+This project has been developed by [Dylan Meca](https://github.com/dylanmeca) and [user](https://github.com/dylanmeca/ChatGPT-Python/contributors) contributions.
