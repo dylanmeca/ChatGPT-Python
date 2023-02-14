@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/language-Python%20-yellow.svg)](https://www.python.org)
 ![logo](https://github.com/dylanmeca/ChatGPT-Python/raw/main/logo.png)
 
-Este repositorio contiene el código que permite usar ChatGPT desde Python usando la [API de OpenAI](https://openai.com/api/).
+This repository contains the code that allows you to use ChatGPT from Python using the [OpenAI API](https://openai.com/api/).
 
 ## ⬇️ Instalación
 Para instalar y utilizar ChatGPT-Python, sigue estos pasos:
