@@ -34,4 +34,4 @@ This project is distributed under the license [GPL-3.0](https://github.com/dylan
 For more information about the license, see the file [LICENSE](https://github.com/dylanmeca/ChatGPT-Python/blob/main/LICENSE) included in this repository.
 
 ## 🧾 Credits
-This project has been developed by [Dylan Meca](https://github.com/dylanmeca) and [user](https://github.com/dylanmeca/ChatGPT-Python/contributors) contributions.
+This project has been developed by [Dylan Meca](https://github.com/dylanmeca) and contributions from [users](https://github.com/dylanmeca/ChatGPT-Python/contributors).
