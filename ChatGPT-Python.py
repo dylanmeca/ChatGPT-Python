@@ -1,8 +1,6 @@
 import openai
 import gradio as gr
 
-openai.api_key = None
-
 # Obteniendo respuestas usando la API de OpenAI
 def respuesta_chatgpt(api_key, mensaje):
   # OPENAI API KEY
