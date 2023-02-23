@@ -11,10 +11,11 @@ pipe = StableDiffusionPipeline.from_pretrained(model_id, scheduler=scheduler, re
 pipe = pipe.to("cuda")
 
 # Getting responses using the OpenAI API
-def response_chatgpt(api_key, message):
+def response_chatgpt(api_key, prompt, negative_prompt):
   # OPENAI API KEY
   openai.api_key = api_key
-  prompt = (f"I want you to analyze this prompt that is used to generate an image based on it and with a similar structure, I want you to write a prompt but so that it generates images of {message}")
+  prompt = (f"I want you to analyze this prompt that is used to generate an image based on it and with a similar structure, I want you to write a prompt but so that it generates images of {prompt}")
+  prompt += f". But avoid generating images that contain: {negative_prompt}"
   response = openai.Completion.create(
       engine="text-davinci-003",
       prompt=prompt,
@@ -30,7 +31,7 @@ def response_chatgpt(api_key, message):
 # User input
 chatbot = gr.Interface(
     fn=response_chatgpt, 
-    inputs=["text", "text"],
+    inputs=["text", "text", "text"],
     outputs=["text", "image"]
 )
 chatbot.launch()   
