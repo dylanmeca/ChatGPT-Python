@@ -14,7 +14,7 @@ while True:
     if usuario in despedida:
         break
     else:
-        prompt = (f"{usuario}")
+        prompt = (f"Tu eres ChatGPT y responde mi siguiente mensaje: {usuario}")
 
     # Getting responses using the OpenAI API
     response = openai.Completion.create(
