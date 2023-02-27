@@ -5,7 +5,7 @@ import gradio as gr
 def respuesta_chatgpt(api_key, mensaje):
   # OPENAI API KEY
   openai.api_key = api_key
-  prompt = (f"{mensaje}")
+  prompt = (f"You are ChatGPT and answer my following message: {mensaje}")
   response = openai.Completion.create(
       engine="text-davinci-003",
       prompt=prompt,
