@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/language-Python%20-yellow.svg)](https://www.python.org)
 ![logo](https://github.com/dylanmeca/ChatGPT-Python/raw/main/logo.png)
 
-ChatGPT-Python is a software that allows you to use ChatGPT from python through a web interface, using the [OpenAI API](https://openai.com/api/).
+ChatGPT-Python is a software that allows you to talk to GPT-3 with a web interface using the [OpenAI API](https://openai.com/api/).
 
 ## ⬇️ Installation
 To install and use ChatGPT-Python, follow these steps:
