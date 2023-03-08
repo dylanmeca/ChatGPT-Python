@@ -1,30 +1,39 @@
 import openai
 import gradio as gr
 
+model_id = "gpt-3.5-turbo"
+conversation = []
+
 # Getting responses using the OpenAI API
 def answer_chatgpt(api_key, message, history):
   history = history or []
-  lista = list(sum(history, ()))
-  lista.append(message)
+  prompt = f"{message}"
+  conversation.append({"role": "user", "content": f"{prompt}"})
   # OPENAI API KEY
   openai.api_key = api_key
-  prompt = (f"You are GPT-3, you are in a web interface and reply to my following message: {message}")
-  response = openai.Completion.create(
-      engine="text-davinci-003",
-      prompt=prompt,
-      max_tokens=1024
+  response = openai.ChatCompletion.create(
+  model=model_id,
+  messages=conversation
   )
   # Displaying the answer on the screen
-  answer = response["choices"][0]["text"]
+  answer = response["choices"][0]["message"]["content"]
   history.append((message, answer))
+  conversation.append({'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
   return history, history
+
+
+def Clean():
+    global history
+    global conversation
+    history = []
+    conversation = []
       
 # User input
 block = gr.Blocks()
 
 with block:
-    gr.Markdown("""<h1><center>🤖 ChatGPT-Python 🐍</center></h1>
-                   <p><center>ChatGPT-Python is a software that allows you to talk to GPT-3 with a web interface using the openai api</center></p>
+    gr.Markdown("""<h1><center>🤖 ChatGPT-Assistant 🐍</center></h1>
+                   <p><center>ChatGPT-Assistant is a chatbot that uses the gpt-3.5-turbo model</center></p>
     """)
     api_key = gr.Textbox(placeholder="api_key")
     chatbot = gr.Chatbot()
@@ -32,5 +41,7 @@ with block:
     state = gr.State()
     submit = gr.Button("Send")
     submit.click(answer_chatgpt, inputs=[api_key, message, state], outputs=[chatbot, state])
+    clean = gr.Button("Clean")
+    clean.click(Clean)
 
-block.launch(debug=True)
+block.launch(debug=True) 
