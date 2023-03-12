@@ -43,5 +43,16 @@ with block:
     submit.click(answer_chatgpt, inputs=[api_key, message, state], outputs=[chatbot, state])
     clean = gr.Button("Clean")
     clean.click(Clean)
+    gr.Examples(
+        examples=["Write a poem about artificial intelligence",
+                  "What could the future be like?",
+                  "If x+1=20, what is the value of x?",
+                  "Write a story that gives a message",
+                  "What programming language is the most used in the industry?",
+                  "How can I be more productive?",
+                  "Create me a training schedule to train from home"
+                  "Sums up everything we've talked about"],
+        inputs=message
+    )
 
 block.launch(debug=True) 
