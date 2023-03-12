@@ -35,9 +35,9 @@ with block:
     gr.Markdown("""<h1><center>🤖 ChatGPT-Assistant 🐍</center></h1>
                    <p><center>ChatGPT-Assistant is a chatbot that uses the gpt-3.5-turbo model</center></p>
     """)
-    api_key = gr.Textbox(placeholder="api_key")
+    api_key = gr.Textbox(type="password", label="Enter your OpenAI API key here")
     chatbot = gr.Chatbot()
-    message = gr.Textbox(placeholder="message")
+    message = gr.Textbox(label="Message")
     state = gr.State()
     submit = gr.Button("Send")
     submit.click(answer_chatgpt, inputs=[api_key, message, state], outputs=[chatbot, state])
