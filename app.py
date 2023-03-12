@@ -50,7 +50,7 @@ with block:
                   "Write a story that gives a message",
                   "What programming language is the most used in the industry?",
                   "How can I be more productive?",
-                  "Create me a training schedule to train from home"
+                  "Create me a training schedule to train from home",
                   "Sums up everything we've talked about"],
         inputs=message
     )
