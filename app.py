@@ -27,6 +27,7 @@ class chatgpt:
       def Clean(self):
           self.history.clear()
           self.conversation.clear()
+          return self.history, self.history
       
 # User input
 block = gr.Blocks()
@@ -43,7 +44,7 @@ with block:
     submit = gr.Button("Send")
     submit.click(chatgpt.answer_chatgpt, inputs=[api_key, message, state], outputs=[chatbot, state])
     clean = gr.Button("Clean")
-    clean.click(chatgpt.Clean)
+    clean.click(chatgpt.Clean, outputs=[chatbot, state])
     gr.Examples(
         examples=["Write a poem about artificial intelligence",
                   "What could the future be like?",
