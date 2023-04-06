@@ -24,6 +24,9 @@ class chatgpt:
           self.conversation.append({'role': response.choices[0].message.role, 'content': response.choices[0].message.content})
           return self.history, self.history
 
+      def system_message(self, systemmessage):
+          self.conversation.append({"role": "system", "content": f"{systemmessage}"})
+
       def Clean(self):
           self.history.clear()
           self.conversation.clear()
@@ -37,9 +40,12 @@ with block:
     gr.Markdown("""<h1><center>🤖 ChatGPT-Assistant 🐍</center></h1>
                    <p><center>ChatGPT-Assistant is a chatbot that uses the gpt-3.5-turbo model</center></p>
     """)
-    api_key = gr.Textbox(type="password", label="Enter your OpenAI API key here")
+    api_key = gr.Textbox(type="password", label="Enter your OpenAI API key here", placeholder="sk-...0VYO")
+    system = gr.Textbox(label="System message", placeholder="You are a helpful assistant.")
+    sub = gr.Button("Send system message")
+    sub.click(chatgpt.system_message, inputs=[system])
     chatbot = gr.Chatbot()
-    message = gr.Textbox(label="Message")
+    message = gr.Textbox(label="Message", placeholder="Hi, how are things ?")
     state = gr.State()
     submit = gr.Button("Send")
     submit.click(chatgpt.answer_chatgpt, inputs=[api_key, message, state], outputs=[chatbot, state])
